@@ -1,0 +1,8 @@
+[Unit]
+Description=TCP server to control the FPGA DAC registers
+
+[Service]
+ExecStart=/usr/bin/dac-tcp-server
+
+[Install]
+WantedBy=multi-user.target

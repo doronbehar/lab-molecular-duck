@@ -1,0 +1,6 @@
+/include/ "system-conf.dtsi"
+/{
+chosen {
+bootargs="clk_ignore_unused";
+};
+};

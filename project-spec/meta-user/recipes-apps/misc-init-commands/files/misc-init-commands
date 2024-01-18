@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Apparently, the registers are not ready or something like that, and we need
+# to do this on startup. Perhaps ideally, the dac-tcp-server should set these
+# every time it gets a new command, using the c function of course.
+echo MISC-INIT-COMMANDS: running devmem commands
+/sbin/devmem 0x84A04418 32 0x02
+/sbin/devmem 0x84A04458 32 0x02
+/sbin/devmem 0x84A04498 32 0x02
+/sbin/devmem 0x84A044D8 32 0x02
+
+/sbin/devmem 0x84A06418 32 0x02
+/sbin/devmem 0x84A06458 32 0x02
+/sbin/devmem 0x84A06498 32 0x02
+/sbin/devmem 0x84A064D8 32 0x02
