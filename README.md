@@ -46,8 +46,8 @@ Almost all of the instructions below don't assume you are using WSL.
 ```sh
 sudo dpkg --add-architecture i386
 sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install \
+sudo apt-get --yes upgrade
+sudo apt-get --yes install \
   build-essential \
   net-tools \
   xterm \
@@ -62,7 +62,7 @@ sudo apt-get install \
   automake \
   texinfo \
   zlib1g:i386
-sudo ln -s /bin/bash /bin/sh
+sudo ln -sf /bin/bash /bin/sh
 ```
 
 Download Petalinux version 2021.2 - **Only this version will work!** Use this link:
