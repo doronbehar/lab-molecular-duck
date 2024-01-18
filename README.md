@@ -153,7 +153,7 @@ change between subsequent builds, and you should be able to run after every
 build the following:
 
 ```sh
-binwalk -e image.ub && cpio --list < _image.ub.extracted/AC* | grep my-file
+binwalk --extract image.ub && cpio --list < _image.ub.extracted/AC* | grep my-file
 ```
 
 And it will search for a `my-file` in the Linux files tree.
