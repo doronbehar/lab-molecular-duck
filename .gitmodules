@@ -1,0 +1,4 @@
+[submodule "meta-adi"]
+	path = project-spec/meta-adi
+	url = https://github.com/doronbehar/meta-adi
+	branch = duck
