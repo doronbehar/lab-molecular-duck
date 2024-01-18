@@ -69,7 +69,7 @@ Download Petalinux version 2021.2 - **Only this version will work!** Use this li
 
 https://www.xilinx.com/member/forms/download/xef.html?filename=petalinux-v2021.2-final-installer.run
 
-Install petalinux program:
+Install Petalinux tools:
 
 ```sh
 bash ./petalinux-v2021.2-final-installer.run --dir petalinux --skip_license
