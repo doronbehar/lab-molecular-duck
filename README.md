@@ -112,7 +112,7 @@ to copy them via Windows' file explorer user interface - assuming you are
 inside the `molecular-duck` directory:
 
 ```sh
-explorer.exe images/linux
+explorer.exe "$(wslpath -w "$PWD/images/linux")"
 ```
 
 # Debugging the image
